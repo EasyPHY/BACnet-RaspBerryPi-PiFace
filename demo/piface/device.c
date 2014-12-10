@@ -231,7 +231,7 @@ bool Device_Reinitialize(
 {
     bool status = false;
 
-    if (characterstring_ansi_same(&rd_data->password, "raspberry")) {
+    if (characterstring_ansi_same(&rd_data->password, "connectex")) {
         switch (rd_data->state) {
             case BACNET_REINIT_COLDSTART:
             case BACNET_REINIT_WARMSTART:
@@ -328,15 +328,15 @@ void Device_Property_Lists(
    The properties that are constant can be hard coded
    into the read-property encoding. */
 
-static uint32_t Object_Instance_Number = 260001;
+static uint32_t Object_Instance_Number = 462071;
 static BACNET_CHARACTER_STRING My_Object_Name;
 static BACNET_DEVICE_STATUS System_Status = STATUS_OPERATIONAL;
 static char *Vendor_Name = BACNET_VENDOR_NAME;
 static uint16_t Vendor_Identifier = BACNET_VENDOR_ID;
-static char Model_Name[MAX_DEV_MOD_LEN + 1] = "PiFace Digital";
+static char Model_Name[MAX_DEV_MOD_LEN + 1] = "EasyPHY PiFace Digital";
 static char Application_Software_Version[MAX_DEV_VER_LEN + 1] = "1.0";
 static char Location[MAX_DEV_LOC_LEN + 1] = "USA";
-static char Description[MAX_DEV_DESC_LEN + 1] = "Raspberry PiFace Digital Demo";
+static char Description[MAX_DEV_DESC_LEN + 1] = "EasyPHY Reference Software";
 /* static uint8_t Protocol_Version = 1; - constant, not settable */
 /* static uint8_t Protocol_Revision = 4; - constant, not settable */
 /* Protocol_Services_Supported - dynamically generated */
@@ -1588,7 +1588,7 @@ void Device_Init(
         characterstring_init_ansi(&My_Object_Name, uciname);
     } else {
 #endif /* defined(BAC_UCI) */
-        characterstring_init_ansi(&My_Object_Name, "PiFace Digital Demo");
+        characterstring_init_ansi(&My_Object_Name, "EasyPHY Raspberry Pi Software Reference Design");
 #if defined(BAC_UCI)
     }
     ucix_cleanup(ctx);

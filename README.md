@@ -1,7 +1,7 @@
 BACnet-RaspBerryPi-PiFace
 =========================
 
-Reference source code for EasyPHY interfaces on Raspberry Pi.
+Reference source code for using EasyPHY interfaces on Raspberry Pi platform.
 
 Based on the very popular open-source stack by Steve Karg at https://sourceforge.net/projects/bacnet/?source=directory 
 
@@ -72,7 +72,10 @@ are created that run under Windows or Linux. They use the BACnet/IP datalink
 layer for communication by default, but could be compiled to use BACnet 
 Ethernet, ARCNET, or MS/TP.
 
-Raspberry Pi platform
+
+To build and execute on Raspberry Pi platform
+---------------------------------------------
+
 $ cd demo/piface
 $ ./configure.sh
 $ make clean all

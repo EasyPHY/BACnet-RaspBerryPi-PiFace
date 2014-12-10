@@ -48,6 +48,8 @@
 #include "timer.h"
 /* include the device object */
 #include "device.h"
+// todonext - comparing piface vs beaglebone builds indicates this is not needed. Review
+
 #include "ai.h"
 #include "ao.h"
 #include "av.h"
