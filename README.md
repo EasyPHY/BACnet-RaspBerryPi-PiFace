@@ -1,3 +1,32 @@
+
+							EasyPHY
+
+EasyPHY(tm) Modules allow manufacuturers (OEMs) of BACnet Native controllers to 
+decouple their designs from the actual physical network requirements.
+
+The OEM implements a single BACnet protocol layer (BACnet MSTP) on their controller
+and this is used to talk to an EasyPHY module.
+
+Then, depending which EasyPHY module is installed, the module simple converts
+those BACnet MSTP messages to BACnet/IP, BACnet Ethernet, BACnet over WiFi,
+BACnet over Echelon's LIFT, etc.
+
+The simplest EasyPHY module contains just an EIA-485 chip - and this enables a very
+cost-effective default of BACnet MSTP, yet allowing the more expensive
+other options to be substitued at any time - on the production line or 
+in the field!
+
+EasyPHY solutions come as plug-in daughteboards, or wire in (EIA-485 or
+logic-level) modules, or as preprogrammed chipsets for on-the-board
+assembly, with unique serial numbers, OUIs etc.
+
+ConnectEx, Inc. supplies the modules, and to enhance adoption, free 
+hardware reference designs and free reference software, based on the very
+well established and popular open source stack by Steve Karg.
+
+Contact info@connect-ex.com for more information.
+
+
 BACnet-RaspBerryPi-PiFace
 =========================
 
