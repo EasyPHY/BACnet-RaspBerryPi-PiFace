@@ -1,4 +1,5 @@
-# EasyPHY Communications Modules
+#BACnet Reference Stack for Raspberry Pi
+#and EasyPHY Communications Modules
 
 **EasyPHY(TM) Modules** allow manufacuturers (OEMs) of BACnet Native controllers to decouple their designs 
 from the actual physical network requirements.
@@ -22,7 +23,7 @@ ConnectEx, Inc. supplies the modules, and to enhance adoption, free hardware ref
 reference BACnet software, based on the very well established and popular open source stack by Steve 
 Karg.
 
-:email: info@connect-ex.com.
+:email: info@connect-ex.com
 http://www.connect-ex.com
 
 ## BACnet-BeagleBone
@@ -80,7 +81,9 @@ as well as various controllers and workstations.
 
 ## To build and execute on Raspberry Pi platform
 
+```
 $ cd demo/piface
 $ ./configure.sh
 $ make clean all
+```
 
