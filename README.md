@@ -1,5 +1,4 @@
-#BACnet Reference Stack for Raspberry Pi
-#and EasyPHY Communications Modules
+#BACnet Reference Stack for Raspberry Pi and EasyPHY Communications Modules
 
 **EasyPHY(TM) Modules** allow manufacuturers (OEMs) of BACnet Native controllers to decouple their designs 
 from the actual physical network requirements.
